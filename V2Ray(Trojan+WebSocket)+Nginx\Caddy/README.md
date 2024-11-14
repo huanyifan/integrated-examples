@@ -17,6 +17,6 @@
 
 4、若选用 Caddy 实现应用，本示例 Caddy 支持自动 HTTPS，即自动申请与更新 TLS 证书，自动 HTTP 重定向到 HTTPS。
 
-5、配置1：使用 Local Loopback 连接。配置2：使用 UDS 连接。
+5、本示例兼容 Trojan-Go 的 WebSocket 应用、但不兼容多路复用，即可使用 Trojan-Go 客户端连接、但不能启用多路复用，故不推荐使用。
 
-6、本示例兼容 Trojan-Go 的服务端中 WebSocket 核心应用，即可使用 Trojan-Go 客户端连接；但 WebSocket 的多路复用不兼容、不能启用，因此不推荐使用。
+6、配置1：使用 Local Loopback 连接。配置2：使用 UDS 连接。
