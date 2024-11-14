@@ -1,6 +1,6 @@
 介绍：
 
-Xray 前置（监听 443 端口），利用 VLESS+Vision+REALITY 支持转发给自己的网站及 Caddy 支持 SplitHTTP、H2C、gRPC、HTTPUpgrade 反向代理与 forwardproxy、caddy-trojan 插件应用，实现除 Xray 的 mKCP 应用外各应用共用 443 端口，其应用如下：
+Xray 前置（监听 443 端口），利用 VLESS+Vision+REALITY 支持转发给自己的网站及 Caddy 支持 SplitHTTP、H2C/gRPC、HTTPUpgrade 反向代理与 forwardproxy、caddy-trojan 插件应用，实现除 Xray 的 mKCP 应用外各应用共用 443 端口，其应用如下：
 
 1、M=VLESS+Vision+REALITY（转发配置，REALITY 所需 TLS 由 Caddy 提供。）
 
