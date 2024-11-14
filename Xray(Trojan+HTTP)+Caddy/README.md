@@ -1,6 +1,6 @@
 介绍：
 
-利用 Caddy 支持 HTTP/3 转换为 H2C 进行反向代理实现 Xray 的 Trojan+HTTP+TLS 应用，TLS 由 Caddy 提供及处理。
+利用 Caddy 支持 HTTP/3 转换为 H2C、支持 H2C 反向代理实现 Xray 的 Trojan+HTTP+TLS 应用，TLS 由 Caddy 提供及处理。
 
 原理：
 
