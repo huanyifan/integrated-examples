@@ -9,7 +9,7 @@
 
 注意：
 
-1、Xray 版本不小于 v1.8.16 才支持 XHTTP（原 SplitHTTP） 传输方式。
+1、Xray 版本不小于 v24.10.31（SplitHTTP 升级为 XHTTP），其 XHTTP 传输方式才实现了真正的上下行分离（见客户端配置示例），给 GFW 针对单个连接的分析带来了麻烦。
 
 2、Nginx 支持 HTTP/2 server、HTTP/3 server 需要 Nginx 包含 http_ssl_module、http_v2_module、http_v3_module 模块构建。
 
@@ -19,4 +19,6 @@
 
 5、若选用 Caddy 实现应用，本示例 Caddy 支持自动 HTTPS，即自动申请与更新 TLS 证书，自动 HTTP 重定向到 HTTPS。
 
-6、配置1：使用 Local Loopback 连接。配置2：使用 UDS 连接。
+6、本示例支持 HTTP/3 传输。若想要由 Caddy 处理的 HTTP/3 应用高速传输，建议[增加服务端系统的 UDP 缓冲区大小](https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes)。
+
+7、配置1：使用 Local Loopback 连接。配置2：使用 UDS 连接。
