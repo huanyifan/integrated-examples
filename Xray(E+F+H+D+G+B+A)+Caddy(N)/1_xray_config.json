@@ -140,7 +140,7 @@
       "streamSettings": {
         "network": "http",
         "httpSettings": {
-          "host": ["z1.xx.yy","h3.xx.yy"], //使用本应用的域名（选配，仅 IOS 客户端需要。）
+          "host": ["zn.xx.yy","h3.xx.yy"], //使用本应用的域名（选配，仅 IOS 客户端需要。）
           "path": "/teuW56Es" //修改为自己的路径
         }
       },
