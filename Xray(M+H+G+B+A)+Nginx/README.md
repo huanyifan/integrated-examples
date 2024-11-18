@@ -18,7 +18,7 @@ Xray 前置（监听 443 端口），利用 VLESS+Vision+REALITY 支持转发给
 
 2、Xray 的 Shadowsocks 2022 新协议提升了性能并带有完整的重放保护。
 
-3、Xray 版本不小于 v1.8.16 才支持 XHTTP（原 SplitHTTP） 传输方式。
+3、Xray 版本不小于 v24.10.31（SplitHTTP 升级为 XHTTP），其 XHTTP 传输方式才实现了真正的上下行分离（见客户端配置示例），给 GFW 针对单个连接的分析带来了麻烦。
 
 4、Nginx 支持 HTTP/2 server、HTTP/3 server 需要 Nginx 包含 http_ssl_module、http_v2_module、http_v3_module 模块构建。
 
