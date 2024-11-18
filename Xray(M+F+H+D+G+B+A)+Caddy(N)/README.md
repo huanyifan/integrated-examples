@@ -24,7 +24,7 @@
 
 2、Xray 的监听地址不支持 Shadowsocks 协议使用 UDS 监听。
 
-3、Xray 版本不小于 v24.9.30 才支持 HTTP（原 HTTP/2） 传输层的 h3 连接，即支持 HTTP/3 传输。
+3、Xray 版本不小于 v24.10.31（SplitHTTP 升级为 XHTTP），其 XHTTP 传输方式才实现了真正的上下行分离（见客户端配置示例），给 GFW 针对单个连接的分析带来了麻烦。
 
 4、Caddy 支持 H2C server 与 HTTP/1.1 server 共用一个端口或一个进程。
 
