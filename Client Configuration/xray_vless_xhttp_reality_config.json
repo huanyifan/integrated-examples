@@ -51,9 +51,6 @@
       },
       "streamSettings": {
         "network": "xhttp",
-        "xhttpSettings": {
-          "path": "/VLSpdG9k" //修改为服务端配置的路径
-        }, //仅服务端有此部分才配置，否则删除。
         "security": "reality",
         "realitySettings": {
           "fingerprint": "chrome", //模拟 TLS 指纹，可任一 chrome、firefox、safari、ios、edge、qq、random、randomized 选项配置。
