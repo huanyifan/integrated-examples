@@ -15,6 +15,6 @@
 
 3、本示例所需 TLS 证书由 Caddy（内置 ACME 客户端） 提供，实现 TLS 证书自动申请及更新。
 
-4、配置1：使用 Local Loopback 连接，且启用了 PROXY protocol。配置2：使用 UDS 连接，且启用了 PROXY protocol。
+4、本示例兼容原版 Trojan 应用，即可使用原版 Trojan 客户端连接；但原版 Trojan 客户端不支持指纹伪造，故不推荐使用。
 
-5、本示例兼容原版 Trojan 的服务端应用，即可使用原版 Trojan 客户端连接；但原版 Trojan 客户端不支持指纹伪造，因此不推荐使用。
+5、配置1：使用 Local Loopback 连接，且启用了 PROXY protocol。配置2：使用 UDS 连接，且启用了 PROXY protocol。
